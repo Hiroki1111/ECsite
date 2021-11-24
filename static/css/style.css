@@ -108,12 +108,20 @@ login
     border-radius: 2rem;
 }
 
-
 /*===============================
 index
 ================================*/
 
 .itemlist img {
+    height: 150px;
+    object-fit: contain;
+}
+
+/*===============================
+product
+================================*/
+
+.product img {
     height: 150px;
     object-fit: contain;
 }

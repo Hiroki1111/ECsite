@@ -15,7 +15,7 @@
                         <h4 class="font-weight-bold">
                             {{ item.price }}円
                         </h4>
-                        <a href="" class="stretched-link"></a>
+                        <a href="{% url 'app:product' item.slug %}" class="stretched-link"></a>
                     </div>
                 </div>
             </div>
