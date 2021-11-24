@@ -26,7 +26,8 @@ class ProfileEditView(LoginRequiredMixin, View):
             initial = {
                 'first_name': user_data.first_name,
                 'last_name': user_data.last_name,
-                'department': user_data.department,
+                'address': user_data.address,
+                'tell': user_data.tell,
             }
         )
         
@@ -42,7 +43,8 @@ class ProfileEditView(LoginRequiredMixin, View):
             # user_dataを使ってそれぞれの情報を取得
             user_data.first_name = form.cleaned_data['first_name']
             user_data.last_name = form.cleaned_data['last_name']
-            user_data.department = form.cleaned_data['department']
+            user_data.address = form.cleaned_data['address']
+            user_data.tell = form.cleaned_data['tell']
             # 入力データをデータベースに保存
             user_data.save()
             # 編集が完了したらprofile画面に遷移する

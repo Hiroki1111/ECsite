@@ -6,6 +6,8 @@ class ProfileForm(forms.Form):
     first_name = forms.CharField(max_length=30, label='姓')
     last_name = forms.CharField(max_length=30, label='名')
     department = forms.CharField(max_length=30, label='所属', required=False)
+    address = forms.CharField(max_length=30, label='住所', required=False)
+    tell = forms.CharField(max_length=30, label='電話番号', required=False)
     
 # allauthのSignupFormを継承
 class SignupUserForm(SignupForm):

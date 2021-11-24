@@ -142,6 +142,11 @@ ACCOUNT_USER_MODEL_USERNAME_FIELD= None
 ACCOUNT_EMAIL_REQUIRED= True
 ACCOUNT_USERNAME_REQUIRED= False
 
+# 画像を使用
+MEDIA_URL = '/media/'
+MEDIA_ROOT = [BASE_DIR, 'media']
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

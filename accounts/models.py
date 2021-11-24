@@ -70,7 +70,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):  # AbstractUserをCustomUs
     first_name = models.CharField('姓', max_length=30) # firstnameを姓に変更,blankは削除,max_lengthは30に変更
     last_name = models.CharField('名', max_length=150, blank=True) # lastnameを名に変更,blankは削除,max_lengthは30に変更
     # email = models.EmailField(_('email address'), blank=True)  emailは追加したので削除
-    department = models.CharField('所属', max_length=30, blank=True) # 追加
+    address = models.CharField('住所', max_length=30, blank=True) # 追加
+    tell = models.CharField('電話番号', max_length=30, blank=True) # 追加
     # DateTimeField: Djangoのモデルに日付と時刻を記録することが出来る
     created = models.DateTimeField('入会日', default=timezone.now)
     # BooleanField: モデルに真偽値を使ったフィールド、つまりFalseかTrueを持つフィールドを定義することが出来る
